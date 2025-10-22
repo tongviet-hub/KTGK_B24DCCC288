@@ -1,0 +1,87 @@
+.postcard {
+  border: 1px solid #f8bbd0;
+  border-radius: 18px;
+  box-shadow: 0 4px 16px rgba(215,38,96,0.08);
+  padding: 22px;
+  background: #fff0f6;
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+  transition: box-shadow 0.2s, transform 0.2s;
+  margin-bottom: 12px;
+  width: 100%;
+  max-width: 340px;
+}
+
+.postcard:hover {
+  box-shadow: 0 8px 32px rgba(215,38,96,0.18);
+  transform: translateY(-4px) scale(1.02);
+}
+
+.postcard-img {
+  border-radius: 12px;
+  width: 100%;
+  height: 170px;
+  object-fit: cover;
+  margin-bottom: 10px;
+  box-shadow: 0 2px 8px #f8bbd0;
+}
+
+.postcard-title {
+  font-size: 1.18rem;
+  font-weight: bold;
+  color: #d72660;
+  margin: 0;
+  text-align: left;
+}
+
+.postcard-meta {
+  font-size: 1rem;
+  color: #a4133c;
+  margin-bottom: 4px;
+  text-align: left;
+}
+
+.postcard-desc {
+  color: #6d2c7c;
+  font-size: 1rem;
+  text-align: left;
+}
+
+.postcard-actions {
+  display: flex;
+  justify-content: space-between;
+  margin-top: auto;
+  padding-top: 10px;
+}
+
+.postcard-btn {
+  background: none;
+  border: none;
+  font-weight: 500;
+  cursor: pointer;
+  padding: 6px 16px;
+  border-radius: 8px;
+  font-size: 1rem;
+  transition: background 0.2s, color 0.2s;
+}
+
+.postcard-btn.read {
+  color: #d72660;
+  background: #ffe4ef;
+}
+
+.postcard-btn.read:hover {
+  background: #f8bbd0;
+  color: #a4133c;
+}
+
+.postcard-btn.delete {
+  color: #a4133c;
+  background: #ffe4ef;
+}
+
+.postcard-btn.delete:hover {
+  background: #f8bbd0;
+  color: #fff;
+}

@@ -1,0 +1,177 @@
+#root {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 2rem;
+  text-align: center;
+}
+
+.logo {
+  height: 6em;
+  padding: 1.5em;
+  will-change: filter;
+  transition: filter 300ms;
+}
+.logo:hover {
+  filter: drop-shadow(0 0 2em #646cffaa);
+}
+.logo.react:hover {
+  filter: drop-shadow(0 0 2em #61dafbaa);
+}
+
+@keyframes logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  a:nth-of-type(2) .logo {
+    animation: logo-spin infinite 20s linear;
+  }
+}
+
+.card {
+  padding: 2em;
+}
+
+.read-the-docs {
+  color: #888;
+}
+
+.editpost-container,
+.postdetail-container {
+  background: #fff0f6; /* hồng nhạt hơn */
+  color: #6d2c7c;
+}
+
+.editpost-title,
+.postdetail-title {
+  color: #d72660;
+}
+
+.postcard {
+  width: 100%;
+  max-width: 320px;
+  margin: 0 auto;
+  background: #fff0f6;
+  color: #6d2c7c;
+  border: 1px solid #f8bbd0;
+}
+
+.postcard-title {
+  color: #d72660;
+}
+
+.postcard-meta {
+  color: #a4133c;
+}
+
+.postcard-desc {
+  color: #6d2c7c;
+}
+
+.postcard-btn.read {
+  color: #d72660;
+  background: #ffe4ef;
+}
+.postcard-btn.read:hover {
+  background: #f8bbd0;
+}
+
+.postcard-btn.delete {
+  color: #a4133c;
+  background: #ffe4ef;
+}
+.postcard-btn.delete:hover {
+  background: #f8bbd0;
+}
+
+.postform {
+  margin: 0 auto;
+  max-width: 480px;
+  background: #fff0f6;
+  color: #6d2c7c;
+}
+
+.postform-btn.submit {
+  background: #d72660;
+  color: #fff;
+}
+.postform-btn.submit:hover {
+  background: #a4133c;
+}
+
+.postform-btn.cancel {
+  background: #ffe4ef;
+  color: #6d2c7c;
+}
+.postform-btn.cancel:hover {
+  background: #f8bbd0;
+}
+
+.postlist-header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 24px;
+  margin-bottom: 18px;
+  color: #d72660;
+}
+
+/* Căn giữa tiêu đề trang */
+h1, h2 {
+  text-align: center;
+}
+
+/* Card bài viết căn giữa */
+.postlist-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 24px;
+  justify-items: center;
+}
+
+/* Card bài viết */
+.postcard {
+  width: 100%;
+  max-width: 320px;
+  margin: 0 auto;
+}
+
+/* Form căn giữa */
+.postform {
+  margin: 0 auto;
+  max-width: 480px;
+}
+
+/* Trang chi tiết bài viết căn giữa */
+.postdetail-container {
+  max-width: 600px;
+  margin: 40px auto;
+  background: #fff0f6;
+  border-radius: 16px;
+  box-shadow: 0 4px 24px rgba(0,0,0,0.08);
+  padding: 32px;
+  text-align: center;
+}
+
+/* Các nút căn giữa trong form và chi tiết */
+.postform-actions, .postdetail-actions {
+  display: flex;
+  justify-content: center;
+  gap: 16px;
+  margin-top: 16px;
+}
+
+/* Header danh sách căn giữa */
+.postlist-header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 24px;
+  margin-bottom: 18px;
+  color: #d72660;
+}

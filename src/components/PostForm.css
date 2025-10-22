@@ -1,0 +1,76 @@
+.postform {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  max-width: 700px; /* tăng max-width cho form */
+  margin: 0 auto;
+  background: #fff0f6;
+  border-radius: 16px;
+  box-shadow: 0 4px 24px rgba(215,38,96,0.08);
+  padding: 32px;
+  color: #6d2c7c;
+}
+
+.postform-input,
+.postform-select,
+.postform-textarea {
+  border: 1px solid #f8bbd0;
+  border-radius: 10px;
+  padding: 10px 14px;
+  font-size: 1rem;
+  background: #fff;
+  color: #6d2c7c;
+  outline: none;
+  transition: border 0.2s;
+  width: 100%;           /* chiếm toàn bộ chiều ngang form */
+  box-sizing: border-box;
+  min-width: 400px;      /* tăng chiều rộng tối thiểu */
+  max-width: 100%;
+}
+
+.postform-textarea {
+  resize: vertical;
+  min-height: 120px;
+}
+
+.postform-actions {
+  display: flex;
+  gap: 16px;
+  justify-content: center;
+  margin-top: 14px;
+}
+
+.postform-btn {
+  border: none;
+  border-radius: 10px;
+  padding: 10px 24px;
+  font-weight: 500;
+  cursor: pointer;
+  font-size: 1rem;
+  transition: background 0.2s;
+}
+
+.postform-btn.submit {
+  background: #d72660;
+  color: #fff;
+}
+
+.postform-btn.submit:hover {
+  background: #a4133c;
+}
+
+.postform-btn.cancel {
+  background: #ffe4ef;
+  color: #6d2c7c;
+}
+
+.postform-btn.cancel:hover {
+  background: #f8bbd0;
+}
+
+.postform-error {
+  color: #e11d48;
+  font-weight: 500;
+  margin-bottom: 8px;
+  text-align: center;
+}

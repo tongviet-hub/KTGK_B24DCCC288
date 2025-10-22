@@ -1,0 +1,34 @@
+.postlist-header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 32px;
+  margin-bottom: 24px;
+  color: #d72660;
+  font-size: 1.1rem;
+}
+.postlist-search {
+  border: 1px solid #f8bbd0;
+  padding: 8px 16px;
+  border-radius: 10px;
+  font-size: 1rem;
+  background: #fff0f6;
+  color: #6d2c7c;
+  outline: none;
+  transition: border 0.2s;
+}
+.postlist-search:focus {
+  border: 1.5px solid #d72660;
+}
+.postlist-count {
+  font-size: 1.05rem;
+  color: #d72660;
+  font-weight: 500;
+}
+.postlist-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr); /* 3 cột cố định */
+  gap: 32px;
+  justify-items: center;
+  width: 100%;
+}
