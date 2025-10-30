@@ -14,19 +14,22 @@ export default function EditPost({ posts, onUpdate }: Props) {
 
   if (!post) return <div className="editpost-notfound">Không tìm thấy bài viết!</div>;
 
+  // Capture the non-null id after the guard to avoid TS18048
+  const postId = post.id;
+
   function handleSubmit(data: Omit<Post, "id" | "date">) {
-    onUpdate(post.id, data);
+    onUpdate(postId, data);
     alert("Cập nhật thành công!");
-    navigate(`/posts/${post.id}`);
+    navigate(`/posts/${postId}`);
   }
 
   return (
     <div className="editpost-container">
       <h2 className="editpost-title">Chỉnh sửa bài viết</h2>
       <PostForm
-        initial={post!}
+        initial={post}
         onSubmit={handleSubmit}
-        onCancel={() => navigate(`/posts/${post.id}`)}
+        onCancel={() => navigate(`/posts/${postId}`)}
         submitLabel="Cập nhật"
       />
     </div>
