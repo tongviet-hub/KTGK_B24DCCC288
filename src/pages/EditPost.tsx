@@ -1,6 +1,6 @@
 import { useParams, useNavigate } from "react-router-dom";
 import PostForm from "../components/PostForm";
-import type { post } from "../types/post";
+import type { Post } from "../types/post";
 
 interface Props {
   posts: Post[];
